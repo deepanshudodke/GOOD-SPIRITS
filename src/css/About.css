@@ -1,0 +1,26 @@
+.about {
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.about img {
+    position: absolute;
+    z-index: -999;
+    opacity: 0.1;
+    width: 400px;
+}
+.about p span {
+    color: red;
+    font-weight: 500;
+}
+
+.about p {
+    /* From https://css.glass */
+    z-index: 1000;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
