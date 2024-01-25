@@ -11,6 +11,7 @@ import Service from "./components/Service";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Dashboard from "./components/Dashboard";
+import AboutFood from "./components/AboutFood";
 import axios from "axios";
 import UserContext from "./context/UserContext";
 import { useState } from "react";
@@ -89,6 +90,10 @@ const AppRouter = createBrowserRouter([
             {
                 path: "/dashboard",
                 element: <Dashboard />
+            },
+            {
+                path: "/dashboard/:id",
+                element: <AboutFood />
             }
         ]
     }

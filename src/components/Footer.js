@@ -21,7 +21,7 @@ const Footer = () => {
                             }}
                         >
                             @ Goodspirits Inc.. 2023 All rights reserved. Made
-                            by Deepanshu Dodke
+                            by
                         </p>
                     </div>
                 </div>

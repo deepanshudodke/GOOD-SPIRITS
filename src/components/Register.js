@@ -32,12 +32,6 @@ const Register = () => {
                 setClicked(true);
             })
             .catch(function (error) {
-                if (
-                    error.response.data.err.error.error.name ===
-                    "SequelizeUniqueConstraintError"
-                ) {
-                    alert("Email and Phone no. is already registered");
-                }
                 console.log(error);
             });
     };
