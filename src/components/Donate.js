@@ -9,6 +9,18 @@ const Donate = () => {
     const [foodItems, setFoodItems] = useState([]);
     let userData = useContext(UserContext);
     userData = userData.userData.user;
+    console.log(userData);
+    const temp = {
+        foodName: "",
+        description: "",
+        servings: "",
+        pickupDate: "",
+        contactPersonName: "",
+        phoneNumber: "",
+        address: "",
+        expiry: "",
+        type: ""
+    };
     const [data, setData] = useState({
         foodName: "",
         description: "",
@@ -30,7 +42,6 @@ const Donate = () => {
 
     const handleImage = (e) => {
         setImage(e.target.files);
-        console.log(e.target.files);
     };
 
     const handleSubmit = async (e) => {
@@ -51,11 +62,16 @@ const Donate = () => {
             }
         };
 
-        const response = await axios.post(
-            "http://localhost:1234/donate",
-            formData,
-            config
-        );
+        try {
+            const response = await axios.post(
+                "http://localhost:1234/donate",
+                formData,
+                config
+            );
+            setData(temp);
+        } catch (error) {
+            console.log(error);
+        }
     };
 
     return (

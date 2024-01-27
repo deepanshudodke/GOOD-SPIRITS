@@ -1,3 +1,52 @@
 .about-food-container {
-    border: 1px solid black;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.about-food-container h1 {
+    text-align: center;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.food-grid p {
+    border: 1px solid rgba(0, 0, 0, 0.331);
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.food-grid p:nth-child(odd) {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.721);
+}
+
+.food-grid p:nth-child(even) {
+    color: rgba(0, 0, 0, 0.573);
+}
+
+.food-photo {
+    width: 30%;
+}
+
+.request-btn {
+    margin-top: 20px;
+}
+.request-btn span {
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: rgba(177, 159, 249, 0.779);
+    display: table;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid rgb(177, 159, 249);
+    padding: 10px 100px;
+}
+
+.request-btn span:hover {
+    background-color: rgb(177, 159, 249);
 }

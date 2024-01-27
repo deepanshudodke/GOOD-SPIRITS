@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AcceptCard = (data) => {
     let photos = data.photo.split(",");
-    console.log(photos[0]);
+    console.log(photos);
     return (
         <div className="accept-card">
             <div className="accept-main-img">
