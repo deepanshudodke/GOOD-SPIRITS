@@ -9,6 +9,7 @@ const Account = () => {
         <>
             <div className="account">
                 <h2>ACCOUNT DETAILS</h2>
+
                 <hr />
                 <div className="user-profile-card">
                     <h3>Name : {data?.name}</h3>
