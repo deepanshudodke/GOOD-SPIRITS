@@ -22,12 +22,12 @@ const AboutFood = () => {
     });
 
     const handleFoodRequest = async () => {
-        console.log("hello", user);
         setUser({
             food_id: foodItem.id,
             donor_id: foodItem.userId,
             acceptor_id: curr_user_id
         });
+        console.log("hello", user);
 
         try {
             const response = await axios.post(
