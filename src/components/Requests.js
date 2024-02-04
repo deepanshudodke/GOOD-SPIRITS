@@ -18,20 +18,20 @@ const Requests = () => {
             });
 
             setRequests(response.data.data);
+            console.log(response);
         } catch (error) {
             console.log("something happen in API calling");
             console.log(error);
         }
     }
 
-    console.log("req", requests);
     useEffect(() => {
         getAllRequests();
     }, []);
     return (
         <div className="requests-container">
-            {requests.map((request) => {
-                return <RequestCard {...request} />;
+            {requests.map((request, i) => {
+                return <RequestCard {...request} index={i} />;
             })}
         </div>
     );

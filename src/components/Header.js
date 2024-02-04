@@ -24,7 +24,7 @@ const Header = () => {
                 <ul className="nav-list">
                     {data.userData.loggedIn && (
                         <li style={{ fontWeight: 600 }}>
-                            @{data.userData.user.name}
+                            @{data.userData.user.id}
                         </li>
                     )}
                     {data.userData.loggedIn && (
